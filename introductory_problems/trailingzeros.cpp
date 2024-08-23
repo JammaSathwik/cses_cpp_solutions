@@ -13,5 +13,12 @@ ll lcm(ll a, ll b) { return a / gcd(a, b) * b; }
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
+    ll n,ans=0,prod=5;
+    cin>>n;
+    while(prod<=n) {
+        ans += n/prod;
+        prod *= 5;
+    }
+    cout<<ans;
     return 0;
 }

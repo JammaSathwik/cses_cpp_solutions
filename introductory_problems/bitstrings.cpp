@@ -13,5 +13,11 @@ ll lcm(ll a, ll b) { return a / gcd(a, b) * b; }
 int main() {
     ios::sync_with_stdio(0);
     cin.tie(0);
+    ll n,ans=1;
+    cin>>n;
+    rep0(i,n) {
+        ans = (ans*2)%rem;
+    }
+    cout<<ans;
     return 0;
 }
